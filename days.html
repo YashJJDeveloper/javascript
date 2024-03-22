@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <style>
+        #display {
+            height: 20vh;
+            width: 100vw;
+            color: black;
+            background-color: rgba(155, 22, 135, 0.4);
+        }
+        .body{
+            background-image: url(https://www.vhv.rs/dpng/d/106-1065051_children-learning-cartoon-hd-png-download.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+        }
+    </style>
+    <script>
+        function days() {
+            let x = document.getElementById("buttons").value;
+            let result=x;
+            if (x == 1) {
+                document.getElementById("display").innerHTML = "Today is Monday";
+                console.log("MOnday");
+            }
+            else if (x == 2) {
+                document.getElementById("display").innerHTML = "Today is Tuesday";
+                console.log("Tuesday");}
+            else if (x == 3) {
+                document.getElementById("display").innerHTML = "Today is Wednesday";
+                console.log("Wednesday");
+            }
+            else if (x == 4) {
+                document.getElementById("display").innerHTML = "Today is Thursday";
+                console.log("Thursday");
+            }
+            else if (x == 5) {
+                document.getElementById("display").innerHTML = "Today is Friday";
+                console.log("Friday");
+            }
+            else if (x == 6) {
+                document.getElementById("display").innerHTML = "Today is Saturday";
+                console.log("Saturday");
+            }
+            else if (x == 7) {
+                document.getElementById("display").innerHTML = "Today is Sunday";
+                console.log("Sunday");
+            }
+            else {
+                document.getElementById("display").innerHTML = "Today is Invalid";
+                console.log("invalid");}
+            
+            console.log(result);
+            
+
+        }
+    </script>
+</head>
+
+<body class="body">
+    <div id="display"></div>
+    <input type="number" id="buttons">
+    <button onclick="days()"> CLICK</button>
+</body>
+
+</html>

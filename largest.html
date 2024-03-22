@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <style></style>
+        <script>
+            function largest(){
+                let x = document.getElementById("one").value;
+            let y = document.getElementById("two").value;
+            let z = document.getElementById("three").value;
+            
+            if((x>y)&&(x>z)){
+               
+                let print=x + "is the largest Number";
+                
+              
+            }
+            else if ((y>x)&&(y>z)){
+                let print= y + "is the largest Number";
+                
+              
+            }
+            else {
+                let print= z + "is the largest Number";
+              
+                console.log(print);
+            }
+            
+            
+            }
+        </script>
+    </head>
+    <body>
+        <div id="display"></div>
+        <input type="number" id="one">
+        <input type="number" id="two">
+        <input type="number" id="three">
+        <button onclick="largest()">Click</button>
+
+    </body>
+</html>

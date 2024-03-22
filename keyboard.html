@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .main {
+            background-image: url(https://as2.ftcdn.net/v2/jpg/01/06/60/99/1000_F_106609988_nja9l6S1HjWY19acWC8vxURhFhO8eYLI.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100vw;
+            height: 65vh;
+        }
+
+        /* left-area */
+        .left {
+            width: 70%;
+            height: 100%;
+        }
+
+        .l1 {
+            display: flex;
+            flex-direction: row;
+            gap: 2px;
+            padding: 5px;
+            width: 70%;
+        }
+
+        .l2 {
+            display: flex;
+            flex-direction: row;
+            gap: 1px;
+            margin-left: 5px;
+            width: 70%;
+        }
+
+        .lrows {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            width: 70%;
+        }
+
+        /* middle-area */
+        .mid {
+            width: 30%;
+            height: 100%;
+        }
+
+        /* right-area */
+        .right {
+            width: 20%;
+            height: 100%;
+        }
+
+        .button {
+            background-color: teal;
+            height: 4vw;
+            width: 4vw;
+            border-radius: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- main -->
+    <div class="main">
+        <!-- left-area -->
+        <div class="left">
+            <!-- 1st line -->
+            <div class="l1">
+                <button class="button">Esc</button>
+                <button class="button">F1</button>
+                <button class="button">F2</button>
+                <button class="button">F3</button>
+                <button class="button">F4</button>
+                <button class="button">F5</button>
+                <button class="button">F6</button>
+                <button class="button">F7</button>
+                <button class="button">F8</button>
+                <button class="button">F9</button>
+                <button class="button">F10</button>
+                <button class="button">F11</button>
+                <button class="button">F12</button>
+            </div>
+            <!-- 2nd line -->
+            <div class="l2">
+                <button class="button">~ <br>
+                    `
+                </button>
+                <button class="button">! <br>
+                    1
+                </button>
+                <button class="button">@ <br>
+                    2
+                </button>
+                <button class="button"># <br>
+                    3
+                </button>
+                <button class="button">$ <br>
+                    4
+                </button>
+                <button class="button">% <br>
+                    5
+                </button>
+                <button class="button">^ <br>
+                    6
+                </button>
+                <button class="button">&<br>
+                    7
+                </button>
+                <button class="button">*<br>
+                    8
+                </button>
+                <button class="button">(<br>
+                    9
+                </button>
+                <button class="button">)<br>
+                    0
+                </button>
+                <button class="button">+<br>
+                    =
+                </button>
+                <button class="button" style="width: 15%; text-align: center;  ">
+                    Backspace
+                </button>
+
+
+            </div>
+            <!-- 3rd line -->
+            <div class="lrows">
+                <button class="button" style="width: 100%;">Tab <br>⇥ <br> ⇤</button>
+                <button class="button">Q</button>
+                <button class="button">W</button>
+                <button class="button">E</button>
+                <button class="button">R</button>
+                <button class="button">T</button>
+                <button class="button">Y</button>
+                <button class="button">U</button>
+                <button class="button">I</button>
+                <button class="button">O</button>
+                <button class="button">P</button>
+                <button class="button">{ <br>[</button>
+                <button class="button">} <br> ]</button>
+                <button class="button">| <br> \</button>
+
+                <!-- 4th line -->
+                <button class="button" style=" width: 100%;">Caps Lock</button>
+                <button class="button">A</button>
+                <button class="button">S</button>
+                <button class="button">D</button>
+                <button class="button">F</button>
+                <button class="button">G</button>
+                <button class="button">H</button>
+                <button class="button">J</button>
+                <button class="button">K</button>
+                <button class="button">L</button>
+                <button class="button">: <br> ;</button>
+                <button class="button">" <br> '</button>
+                <button class="button" style=" width: 100%;">Enter</button>
+                <button class="button"></button>
+
+                <!-- 5th line -->
+                <button class="button" style="width: 100%;">Shift</button>
+                <button class="button">Z</button>
+                <button class="button">X</button>
+                <button class="button">C</button>
+                <button class="button">V</button>
+                <button class="button">B</button>
+                <button class="button">N</button>
+                <button class="button">M</button>
+                <button class="button"> < br ,</button>
+                <button class="button">> <br> .</button>
+                <button class="button">? <br> /</button>
+                <button class="button" style="width: 100%;">Shift</button>
+                <button class="button"></button>
+                <button class="button"></button>
+                <!-- 6th line -->
+                <button class="button" style="width: 100%;">Ctrl</button>
+                <button class="button">Cmd</button>
+                <button class="button">Alt</button>
+                <button class="button" style="width: 200px; column-span: 4;">Space</button>
+                <!-- <button class="button"></button>
+                        <button class="button"></button>
+                        <button class="button"></button>
+                        <button class="button"></button>
+                        <button class="button"></button>
+                        <button class="button"></button> -->
+                <button class="button">Alt</button>
+                <button class="button">Cmd</button>
+                <button class="button"> Page</button>
+                <button class="button" style="width: 100%;">Ctrl</button>
+            </div>
+        </div>
+
+        <!-- middle-area -->
+        <div><!-- 1st line -->
+            <!-- middle 2 rows -->
+            <!-- navigation keys -->
+        </div>
+
+        <!-- right-area -->
+        <div>
+            <!-- number pad -->
+        </div>
+    </div>
+</body>
+
+</html>

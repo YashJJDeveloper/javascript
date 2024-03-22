@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .main {
+            width: 90vw;
+            height: 60vh;
+            background-image: url(https:m.media-amazon.com/images/I/71neWd501PL._AC_UF894,1000_QL80_.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 5%;
+            margin: 5vw;
+        }
+
+        .submit {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            width: 130px;
+            height: 35px;
+            background-color: green;
+            border-radius: 5%;
+            
+           
+            gap: 5px;
+            
+
+        }
+
+        #display {
+            width: 80vw;
+            margin-left: 5vw;
+            margin-top: 5%;
+            height: 20vh;
+            background-image: url(https:media.istockphoto.com/id/898704212/photo/man-think-how-to-solve-the-problem.jpg?s=612x612&w=0&k=20&c=G0v9kQml0LfXqTp_U1hGTQxFODseWTqDJ-z29ENiaAQ=);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            background-clip: border-box;
+            border-radius: 10%;
+
+
+        }
+    </style>
+    <script>
+        // function displayFunction(numberOne, numberTwo) {
+
+        //  document.getElementById("display").innerHTML = "I AM ON   &emsp; I am Working" + into(numberOne, numberTwo) + add(numberOne, numberTwo);
+
+        //}
+
+
+        //function into(numberOne, numberTwo) {
+        //  total = total + numberOne * numberTwo;
+        // return total;
+
+
+        //}
+        //  function add(numberOne, numberTwo) {
+        //    total = total + numberOne + numberTwo;
+        //  return total
+        //}
+       let total =  0;
+
+        function add() {
+            let x =  Number(document.getElementById("number-one").value);
+            let y =  Number(document.getElementById("number-two").value);
+            total = total + x + y
+            document.getElementById("display").innerHTML = "The total is " + total;
+
+        }
+        function sub() {
+            let x =  Number(document.getElementById("number-one").value);
+            let y =  Number(document.getElementById("number-two").value);
+            total =  total + x - y;
+            document.getElementById("display").innerHTML = "The total is " + total;
+
+        }
+        function into() {
+            let x =  Number(document.getElementById("number-one").value);
+            let y =  Number(document.getElementById("number-two").value);
+            total = total + x * y;
+            document.getElementById("display").innerHTML = "The total is " + total;
+
+        }
+        function div() {
+            let x =  Number(document.getElementById("number-one").value);
+            let y =  Number(document.getElementById("number-two").value);
+            total = total + x / y;
+            document.getElementById("display").innerHTML = "The total is " + total;
+
+        }
+        function clearfunction() {
+            total = 0
+            document.getElementById("display").innerHTML = ""
+        }
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <h1 id="display"></h1>
+        <input type="number" id="number-one" >
+        <input type="number" id="number-two" >
+        <button type="submit" class="submit" onclick="add()">CLICK HERE To ADD</button>
+        <button type="submit" class="submit" onclick="sub()">CLICK HERE To Subtract</button>
+        <button type="submit" class="submit" onclick="into()">CLICK HERE To Multiply</button>
+        <button type="submit" class="submit" onclick="div()">CLICK HERE To Divide</button>
+        <button type="submit" class="submit" onclick="clearfunction()">CLEAR</button>
+    </div>
+</body>
+
+</html>

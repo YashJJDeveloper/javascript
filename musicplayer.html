@@ -1,0 +1,90 @@
+<html>
+
+<head>
+    <style>
+        .body {
+            background-image: url("https://c4.wallpaperflare.com/wallpaper/738/744/882/music-vinyl-simple-background-minimalism-wallpaper-preview.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+        }
+        .music-station{
+            display: flex;
+            flex-direction: column;
+            margin: 10%;
+            
+        }
+       
+    </style>
+    <script>
+        // Get the audio element
+
+
+        // Function to play the audio
+        function playAudio() {
+            let audio = document.getElementById("myAudio");
+            audio.play();
+
+        }
+
+        // Function to pause the audio
+        function pauseAudioOne() {
+            let audio = document.getElementById("myAudio");
+            audio.pause();
+        }
+        // Function to play the audio
+        function nextAudio() {
+            let audio = document.getElementById("secondAudio");
+            audio.play();
+        }
+        // Function to pause the audio
+        function pauseAudioTwo() {
+            let audio = document.getElementById("secondAudio");
+            audio.pause();
+        }
+        // Function to play the audio
+        function audioThree() {
+            let audio = document.getElementById("song");
+            audio.play();
+        }
+        // Function to pause the audio
+        function pauseAudioThree() {
+            let audio = document.getElementById("song");
+            audio.pause();
+        }
+    </script>
+</head>
+
+<body class="body">
+   <div class="music-station">
+    <div>
+        <audio id="myAudio">
+            <source src="assets/glossy.mp3" type="audio/mpeg">
+
+        </audio>
+
+        <button onclick="playAudio()"> <img src="assets/playbutton.jpg" height="35px" width="50px"></button>
+        <button onclick="pauseAudioOne()"><img src="assets/pausebutton.jpg" height="35px" width="50px"></button>
+    </div>
+    <div>
+        
+        <audio id="secondAudio">
+            <source src="assets/ethereal-vistas.mp3">
+        </audio>
+        <button onclick="nextAudio()"> <img src="assets/playbutton.jpg" height="35px" width="50px"></button>
+        <button onclick="pauseAudioTwo()"><img src="assets/pausebutton.jpg" height="35px" width="50px"></button>
+    </div>
+
+    <div>
+        <audio id="song">
+            <source src="assets/Rom Rom.mp3">
+        </audio>
+        <button onclick="audioThree()"> <img src="assets/playbutton.jpg" height="35px" width="50px"></button>
+        <button onclick="pauseAudioThree()"><img src="assets/pausebutton.jpg" height="35px" width="50px"></button>
+    </div>
+   </div>
+
+</body>
+
+</html>

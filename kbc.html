@@ -1,0 +1,114 @@
+<html>
+
+<head>
+    <title>KBC</title>
+    <style>
+        .container {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            gap: 10%;
+            align-items: center;
+            background-image: url(https://navbharattimes.indiatimes.com/thumb/69341162/kbc-11-69341162.jpg?imgsize=428966&width=1200&height=900&resizemode=75);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+
+        .question-box {
+            height: 20vh;
+            width: 80vw;
+            background-color: rgba(55, 0, 80,0.4);
+            border-color: rgb(156, 113, 34);
+            border-style: solid;
+            border-width: 2%;
+            margin-top: 20%;
+            border-radius: 5%;
+            color: white;
+        }
+
+        .options {
+            height: 20vh;
+            width: 80vw;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 10%;
+
+        }
+
+        .optionA {
+            height: 10vh;
+            width: 40vw;
+            background-color: rgba(55, 0, 80,0.4);
+            border-color: rgb(156, 113, 34);
+            border-style: solid;
+            border-width: 2%;
+            margin-left: -10%;
+            border-radius: 5%;
+        }
+
+        .button {
+            height: 100%;
+            width: 100%;
+            background-color: rgba(55, 0, 80,0.5);
+            border-radius: 5%;
+            border-color: rgb(156, 113, 34);
+            color: white;
+        }
+    </style>
+    <script>
+        let questionNumber=0;
+        function doStart() {
+            document.getElementById("container").hidden = true;
+            document.getElementById("playButton").hidden = false;
+        }
+        function startScreen() {
+            document.getElementById("container").hidden = false;
+            document.getElementById("playButton").hidden = true;
+        }
+        function question() {
+            document.getElementById("display").innerHTML = "What is your Name?";
+
+            document.getElementById("answerOne").innerHTML = "5 Crore";
+
+
+            document.getElementById("answerTwo").innerHTML = "5 Crore";
+
+
+            document.getElementById("answerThree").innerHTML = "5 Crore";
+
+
+            document.getElementById("answerFour").innerHTML = "5 Crore";
+
+        }
+        function(question){
+            if(question==1){
+                questionNumber = 1;
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <button id="playButton " onclick="doStart()" style="background-color: rgb(55, 0, 80); color: ;">Lets Play</button>
+    <div class="container" id="container" hidden="true">
+        <div class="question-box" id="display" onclick="question()">
+
+        </div>
+        <div class="options">
+            <div class="optionA"><button class="button" id="answerOne" onclick="answerOne()"></button></div>
+            <div class="optionA"><button class="button" id="answerTwo" onclick="answerTwo()"></button></div>
+            <div class="optionA"><button class="button" id="answerThree" onclick="answerThree()"></button></div>
+            <div class="optionA"><button class="button" id="answerFour" onclick="answerFour()"></button></div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
